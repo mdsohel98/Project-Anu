@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ===========================
+    MENU PART START
+============================== */
+#menu-part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.menuitem{
+    text-align: right;
+    float: left;
+}
+.bg-light {
+    background-color:transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight:500;
+    font-family: roboto;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #87d37c !important;
+}
+.navbar-light .navbar-nav .show>.nav-link {
+    color:#87d37c;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color:#87d37c;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+.dropdown-menu{
+    padding: 0;
+    background: #e6e6e6;
+}
+.dropdown-item{
+    color: rgba(0,0,0,.5);
+    font-size: 14px;
+    font-weight:500;
+    font-family: roboto;
+    border-bottom: 1px solid #c0c0c0;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:#fff;
+}
+/* ===========================
+    MENU PART END
+============================== */
+/* ===========================
+    BANNER PART START
+============================== */
+#slider{
+    background: url(../image/banner.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner-ovarlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.carousel-item{
+    padding: 150px 0;
+    color: #ffffff;
+}
+.carousel-item h3{
+    font-family:Roboto;
+    font-size:40px;
+    font-weight:bold;
+}
+.carousel-item h2{
+    font-family:Roboto;
+    font-size: 100px;
+    font-weight:bold;
+    border: 2px solid #fdfdfd;
+    width:670px;
+    margin: 0 auto;
+}
+.carousel-item h4{
+    font-family:Roboto;
+    font-size:36px;
+    font-weight: 400;
+}
+.carousel-item span{
+    color: #87d37c;
+}
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    background:#ffffff;
+    border-radius: 50%;
+    border: 0;
+    opacity: 1;
+}
+.carousel-indicators .active {
+    background: #87d37c;
+}
+/* ===========================
+    BANNER PART END
+============================== */
+/* ===========================
+    ABOUT PART START
+============================== */
+#about-part{
+    padding: 110px 0px;
+    background: #fdfafa;
+}
+.about-top h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bold;
+    color: #040404;
+    margin-bottom: 35px;
+}
+.about-top p {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #262627;
+    max-width: 750px;
+    margin-bottom: 60px;
+}
+
+.about-icon i{
+    font-size: 50px;
+    color: #030303;
+}
+.about-icon h3{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #030303;
+    margin-top: 30px;
+    margin-bottom:15px;
+}
+.about-icon p{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #040404;
+    text-align: justify;
+    line-height: 25px;
+}
+.about-icon:hover i,
+.about-icon:hover h3{
+    color:#87d37c;
+    cursor: pointer;
+}
+/* ===========================
+    ABOUT PART END
+============================== */
+/* ===========================
+    SERVICE PART START
+============================== */
+section#service-part {
+    background: #e1e1e1;
+    padding: 100px 0px;
+}
+#service-part .service-top h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bold;
+    color: #040404;
+    margin-bottom: 35px;
+}
+#service-part .service-top p{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #262627;
+    max-width: 750px;
+    margin-bottom: 60px;
+}
+.service-image img {
+    width: 100%;
+    display: block;
+}
+.service-image{
+    position: relative;
+    overflow: hidden;
+}
+.service-ovarlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: -100%;
+    transition: .5s;
+}
+.service-image:hover .service-ovarlay{
+    top: 0;
+}
+.service-icon{
+    position: absolute;
+    left:50%;
+    bottom: -100%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.service-icon i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fdfdfd;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color:#fdfdfd;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.service-image:hover .service-icon{
+    bottom: 40%;
+}
+.service-icon i:hover{
+    background:#87d37c;
+    border:1px solid #87d37c;
+}
+/* ===========================
+    SERVICE PART END
+============================== */
+/* ===========================
+    PORTFOLIO PART START
+============================== */
+#portfolio-part{
+    height: 865px;
+    color: #fdfafa;
+}
+#portfolio-part .container {
+    padding-top: 40px;
+}
+.portfolio-heading h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bold;
+    color: #040404;
+    margin-bottom: 30px;
+}
+.portfolio-heading p{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #262627;
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+/* portfolio heading end */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+/* ---- button ---- */
+.button {
+  display: inline-block;
+  background:#010101;
+  border: none;
+  color:#fdfefe;
+  font-family: Roboto;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s;
+}
+.button:hover {
+  background-color: #87d37c;
+  color:#fdfefe;
+}
+.button:active,
+.button.is-checked {
+    background-color: #87d37c;
+    outline: none;
+}
+/* ---- button-group ---- */
+.button-group {
+    margin-bottom: 30px;
+}
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.button-group .button { 
+  margin-right: 15px;
+}
+/* ---- isotope ---- */
+.my_div{
+    position: relative;
+    height: 564.026px;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .element-item ---- */
+.element-item {
+  position: relative;
+  float: left;
+  width: 33%;
+  border:10px solid #fff;
+}
+.element-item img{
+    width: 100%;
+    display: block;
+}
+/* ===========================
+    PORTFOLIO PART END
+============================== */
+/* ===========================
+    PRICING PART START
+============================== */
+#pricing-part{
+    padding: 172px 0;
+}
+.pricing-box ul{
+    list-style: none;
+    padding: 0;
+}
+.pricing-heading h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bold;
+    color: #040404;
+    margin-bottom: 30px;
+}
+.pricing-heading p{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #262627;
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+/* portfolio heading end */
+
+.pricing-box{
+    padding: 20px;
+    background-color:#39393a;
+    color: #fefdfc;
+    border-radius: 5px;
+    transition: .4s;
+}
+.pricing-circle{
+    width: 130px;
+    height: 130px;
+     border: 5px solid #fff;
+     border-radius: 50%;
+     margin: 0 auto;
+     transition: .4s;
+}
+.pricing-circle p{
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.pricing-circle sup{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    font-weight:bold;
+}
+.pricing-circle b{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:30px;
+    font-weight:bold;
+}
+.pricing-circle span{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight:bold;
+    margin-top: -20px;
+    margin-left: 10px;
+    display: block;
+}
+.pricing-box ul li{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight:400;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    max-width: 135px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.pricing-box .btn{
+    background: #fefdfc;
+    border-radius: 0;
+    color: #39393a;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: .4s;
+}
+.pricing-box .btn.focus, .btn:focus {
+    outline: 0;
+    /* box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); */
+}
+.pricing-box:hover{
+    background: #87d37c;
+    color: #fffefe;
+}
+.pricing-box:hover .pricing-circle{
+    background: #ffffff;
+    color: #87d37c;
+}
+.pricing-box:hover .btn{
+    color: #87d37c;
+    background: #fff;
+}
+.pricing-box .btn-outline-dark:focus, .btn-outline-dark.focus {
+    box-shadow:transparent;
+    color: #fff;
+  }
+/* ===========================
+    PRICING PART END
+============================== */
+/* ===========================
+    COUNTER UP PART START
+============================== */
+#counter-part{
+
+/* padding: 60px 0; */
+}
+#counter-part .main_counter_area{
+    background: url(../image/counter-background.jpg) no-repeat center;
+    background-size: cover;   
+}
+.counter_ovarlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+.counter_ovarlay{
+    padding: 100px 0;
+}
+.single_conter{
+    border: 1px solid #757161;
+    color: #fff;
+    padding: 20px 0px;
+    background: #00000050;
+}
+.single_conter span{
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.single_conter p{
+    font-size:18px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: -10px;
+}
+/* ===========================
+    COUNTER UP PART END
+============================== */
+/* ===========================
+    CONTACT US PART START
+============================== */
+#contact-part{
+    padding: 80px 0px;
+}
+.contact_area{
+   
+    margin-top: 50px;
+}
+.contact:hover i,
+.contact:hover p{
+    color:#87d37c;
+    cursor: pointer;
+}
+.contact i{
+    font-size: 40px;
+    font-weight: bold;
+    color: #232424;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+.contact p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #2a2a2a;
+    transition: .3s;
+}
+.contact a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+/* ===========================
+    CONTACT US PART END
+============================== */
+/* ===========================
+    MESSAGE PART START
+============================== */
+#message-part{
+    padding: 100px 0px;
+    background: #f5f5f5;
+}
+.form-control{
+    border-radius: 0;
+    border: 0;
+    margin-top: 20px;
+    font-style: italic;
+}
+.form-control:focus {
+    color: rgb(73, 80, 87);
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    border-color: #fff;
+    outline: 0px;
+    border-radius: 5px;
+    font-style: normal;
+}
+form .btn {
+    background: #87d37c;
+    color: #fff;
+    padding: 15px -1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .4s;
+    margin-top: 20px;
+    border-radius: 0;
+    border: 0;
+    transition: .4s;
+}
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+.btn.focus, .btn:focus {
+    box-shadow:none;
+    outline: 0px;
+}
+textarea#exampleFormControlTextarea1 {
+    padding: 12px;
+}
+form .btn-outline-dark:focus, .btn-outline-dark.focus {
+    box-shadow:transparent;
+    color: #fff;
+  }
+form .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.;
+}
+
+/* ===========================
+    MESSAGE PART END
+============================== */
+.scrollup{
+    background:#26f508;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 0;
+    color: #000;
+    font-size: 40px;
+    position: fixed;
+    bottom: 190px;
+    right: 9px;
+    opacity: .5;
+    cursor:pointer;
+    /* transition: opacity .2s linear; */
+  }
+  .scrollup:hover{
+    opacity:1;
+  }
+  
+
+/* ===========================
+    FOOTER PART START
+============================== */
+footer{
+    background: #000101;
+    margin-top: -7px;
+    padding: 30px 0;
+}
+footer .footer_text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400px;
+    color: #ffffff;
+    display: inline;
+}
+footer .footer_icon i{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 20px;
+    transition: .3s;
+}
+footer .footer_icon i:hover{
+    color: #87d37c;
+}
+/* ===========================
+    FOOTER PART END
+============================== */
